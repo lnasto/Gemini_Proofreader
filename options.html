@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; width: 350px; color: #333; }
+        h2 { color: #1a73e8; font-size: 18px; }
+        .section { margin-bottom: 15px; padding: 10px; border: 1px solid #eee; border-radius: 8px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 13px; }
+        input[type="password"] { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        .toggle-item { margin: 8px 0; display: flex; align-items: center; font-size: 13px; }
+        .toggle-item input { margin-right: 10px; }
+        button { width: 100%; padding: 10px; background: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #1557b0; }
+        #status { font-size: 12px; color: green; margin-top: 10px; text-align: center; }
+        .legal-notice { margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee; font-size: 10px; color: #666; text-align: justify; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <h2>Gemini Settings</h2>
+    
+    <div class="section">
+        <label for="apiKey">Google AI API Key:</label>
+        <input type="password" id="apiKey" placeholder="Paste your key here...">
+        <p style="font-size: 10px; color: #666;">
+            The key is stored locally on your device.<br>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #1a73e8; text-decoration: none; display: inline-block; margin-top: 5px;"><b>👉 Get your free API key here</b></a>
+        </p>
+    </div>
+
+    <div class="section">
+        <label>Active Features:</label>
+        <div class="toggle-item"><input type="checkbox" id="enableAnalysis"> 🔍 Proofread & Fix</div>
+        <div class="toggle-item"><input type="checkbox" id="enableProf"> 👔 Formal Tone</div>
+        <div class="toggle-item"><input type="checkbox" id="enableCasual"> 👋 Casual Tone</div>
+        <div class="toggle-item"><input type="checkbox" id="enableTrans"> 🌍 Translate (EN)</div>
+    </div>
+	<div class="section">
+		<label>Keyboard Shortcut:</label>
+		<p style="font-size: 12px; color: #666;">Default is <b>Alt+Shift+Q</b>.</p>
+        <label style="margin-top: 10px; font-size: 11px;">Shortcut Action:</label>
+        <select id="shortcutAction" style="width: 100%; padding: 6px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+			<option value="geminiAnalysis">🔍 Proofread & Fix</option>
+			<option value="geminiProf">👔 Formal Tone</option>
+			<option value="geminiCasual">👋 Casual Tone</option>
+			<option value="geminiTrans">🌍 Translate (EN)</option>
+			<option value="ask">❓ Ask every time</option>
+		</select>
+		<button id="openShortcuts" style="background: #5f6368; margin-top: 5px;">Change Shortcut</button>
+	</div>
+    <button id="save">Save Settings</button>
+    <div id="status"></div>
+
+    <div class="legal-notice">
+        <b>🛡️ Privacy & Security:</b> No personal data is stored by us. Your text is sent directly to Google's API. Your API Key remains strictly local to your device.
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

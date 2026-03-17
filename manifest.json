@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Proofreader With API usage of Gemini",
+  "version": "2.0",
+  "description": "Quickly proofread, translate, and change the tone of your text using Google's Gemini AI.",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "128": "icon128.png"
+    },
+    "default_title": "Gemini AI Tools"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "run-gemini-analysis": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q",
+        "mac": "Command+Shift+Q"
+      },
+      "description": "Quick Gemini Analysis"
+    }
+  }
+}
