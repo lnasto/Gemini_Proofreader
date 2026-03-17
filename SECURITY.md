@@ -1,4 +1,4 @@
-Security Policy
+Security & Privacy Policy
 
 Supported Versions
 
@@ -35,6 +35,26 @@ You will receive an acknowledgment of your report within 48 hours.
 We will provide an estimated timeline for a fix.
 
 Once the vulnerability is resolved, a new version will be pushed to the Chrome Web Store and the GitHub repository.
+
+Πολιτική Απορρήτου (Privacy Policy)
+
+Η παρούσα πολιτική εξηγεί πώς διαχειριζόμαστε τα δεδομένα σας στην επέκταση Gemini Proofreader With API usage of Gemini.
+
+1. Συλλογή Δεδομένων (Data Collection)
+
+Ο δημιουργός αυτής της επέκτασης ΔΕΝ συλλέγει, δεν αποθηκεύει και δεν έχει πρόσβαση σε κανένα από τα προσωπικά σας δεδομένα, τα κείμενα που επιλέγετε ή το ιστορικό περιήγησής σας.
+
+2. Μεταφορά Δεδομένων (Data Transmission)
+
+Όταν χρησιμοποιείτε την επέκταση για να διορθώσετε ή να μεταφράσετε κείμενο, το επιλεγμένο κείμενο αποστέλλεται απευθείας στους επίσημους διακομιστές της Google (Gemini API) μέσω ασφαλούς σύνδεσης HTTPS. Δεν μεσολαβεί κανένας άλλος διακομιστής (middle-man server).
+
+3. Διαχείριση API Key (Security)
+
+Το API Key που εισάγετε αποθηκεύεται αποκλειστικά τοπικά στον περιηγητή σας (chrome.storage.local). Δεν συγχρονίζεται στο cloud και δεν κοινοποιείται σε τρίτους.
+
+4. Αποποίηση Ευθυνών (Disclaimer)
+
+Η επέκταση παρέχεται "ως έχει". Δεν φέρουμε ευθύνη για την ορθότητα των αποτελεσμάτων του AI ή για τυχόν υπερβάσεις ορίων (quota) στον προσωπικό σας λογαριασμό Google AI Studio.
 
 Our Security Commitments
 
